@@ -127,6 +127,9 @@ class Whoswho:
 if __name__ == "__main__":
     system = Whoswho()
 
+    # use gpt-3.5-turbo, gpt-4, gpt-4o, etc...
+    model="gpt-3.5-turbo"
+
     # Adding agents
     system.add_agent('Developer1', 'Write code according to the requirements.')
     system.add_agent('Developer2', 'Check code for errors.')
@@ -145,7 +148,7 @@ if __name__ == "__main__":
 
     # Interacting with agents
     developer1 = system.get_agent('Developer1')
-    response = developer1.interact('Write a Python function to add two numbers.', iterations=1)
+    response = developer1.interact('Write a Python function to add two numbers.', model=model, iterations=1)
     print(response)
 
     # Extracting code from the response
@@ -172,10 +175,10 @@ if __name__ == "__main__":
         print(log_entry)
 
     developer2 = system.get_agent('Developer2')
-    response = developer2.interact('Check the function for errors: def add(a, b): return a + b', iterations=1)
+    response = developer2.interact('Check the function for errors: def add(a, b): return a + b', model=model, iterations=1)
     print(response)
 
     developer3 = system.get_agent('Developer3')
-    response = developer3.interact('Suggest a new feature for the add function.', iterations=1)
+    response = developer3.interact('Suggest a new feature for the add function.', model=model, iterations=1)
     print(response)
 

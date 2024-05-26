@@ -20,7 +20,7 @@ The `Whoswho` library provides a framework for managing and interacting with mul
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/multi-agent-system.git
+    git clone https://github.com/woodyk/Whoswho.git
     ```
 
 2. Navigate to the project directory:
