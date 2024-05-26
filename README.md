@@ -39,6 +39,7 @@ Ensure you have the OpenAI API key set up in your environment. You can set it up
 
 ```sh
 export OPENAI_API_KEY='your_openai_api_key_here'
+```
 
 Reload your shell configuration or restart your terminal session to apply the changes.
 
